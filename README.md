@@ -158,7 +158,48 @@ masterauth [ACCESSKEY]
 ``` 
 
 
+• Dosyayı kaydedip çıkın.
 
+• Save the file and exit.
+
+
+>:wq!
+
+
+
+### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7001/redis_7001.conf dosyasını oluşturun ve düzenleyin.
+###     Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
+
+
+
+>  vim /etc/redis/cluster/7001/redis_7001.conf
+
+
+``` bash 
+
+
+port 7001
+dir /var/lib/redis/7001
+appendonly no
+protected-mode no
+cluster-enabled yes
+cluster-node-timeout 5000
+cluster-config-file /etc/redis/cluster/7001/nodes_7001.conf
+pidfile /var/run/redis/redis_7001.pid
+logfile /var/log/redis/redis_7001.log
+loglevel notice
+masterauth [ACCESSKEY]
+requirepass [ACCESSKEY]
+
+
+``` 
+
+• Dosyayı kaydedip çıkın.
+
+• Save the file and exit.
+
+
+>:wq!
 
 
 
