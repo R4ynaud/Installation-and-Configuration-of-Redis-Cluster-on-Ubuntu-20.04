@@ -32,7 +32,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 > sudo systemctl disable redis-server.service
 
 ### 3-) Kurulumu tamamladıktan sonra aşağıdaki komutları çalıştırarak portlara izin vermemiz gerekiyor.  
-### 3-) After completing the installation, we need to run the following commands to allow access to the ports.
+###     After completing the installation, we need to run the following commands to allow access to the ports.
 
 > sudo ufw allow 7000 
    
