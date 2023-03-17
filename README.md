@@ -363,5 +363,34 @@ WantedBy=multi-user.target
 
 
 
+### 14-) Aşağıdaki komutu çalıştırarak 7000 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
+###      Run the following command to check the status of the redis-server service running on port 7000.
+
+
+
+> systemctl status redis_7000.service
+
+
+
+![image](https://user-images.githubusercontent.com/93924485/225988697-b84c7dca-d014-4b3e-890e-8fb8fec1eea4.png)
+
+
+
+
+
+### 14-) Aşağıdaki komutu çalıştırarak 7001 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
+###      Run the following command to check the status of the redis-server service running on port 7001.
+
+
+
+> systemctl status redis_7001.service
+
+
+
+![image](https://user-images.githubusercontent.com/93924485/225988786-6f4973c8-c3f7-4ab4-b33c-d7cc01a6b1a5.png)
+
+
+
+
 
 
