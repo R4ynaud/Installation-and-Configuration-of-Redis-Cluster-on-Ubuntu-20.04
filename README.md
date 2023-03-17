@@ -56,4 +56,20 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 ### 4-) Aşağıdaki komutu çalıştırarak /etc/rc.local dosyasını oluşturun ve düzenleyin.
 ###     Create and edit the /etc/rc.local file by running the following command.
 
-.
+> vim /etc/rc.local 
+
+> #!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
+sysctl -w net.core.somaxconn=65535
+exit 0
