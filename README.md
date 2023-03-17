@@ -78,5 +78,21 @@ exit 0 ' '
 ### 5-) Oluşturduğumuz dosyayı çalıştırılabilir hale getirmek için aşağıdaki komutu çalıştırmalıyız.
 ###     To make a file executable, you should run the following command.
 
+
 > chmod +x /etc/rc.local
+
+
+• Save the file and exit.
+• Dosyayı kaydedip çıkın.
+
+
+
+
+
+
+
+
+
+
+
 
