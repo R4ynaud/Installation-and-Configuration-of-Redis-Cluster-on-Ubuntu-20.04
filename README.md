@@ -167,6 +167,12 @@ masterauth [ACCESSKEY]
 
 
 
+![image](https://user-images.githubusercontent.com/93924485/225979204-462dac88-d88e-42a5-9eb1-7dae574bf173.png)
+
+
+
+
+
 ### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7001/redis_7001.conf dosyasını oluşturun ve düzenleyin.
 ###     Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
 
