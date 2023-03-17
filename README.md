@@ -392,5 +392,27 @@ WantedBy=multi-user.target
 
 
 
+# Redis Cluster Konfigürasyonu / Redis Cluster Configuration 
+
+
+
+### • 3 Redis sunucusunun IP adreslerinin aşağıdaki gibi olduğunu düşünün.
+### • Consider that the IP addresses of three Redis servers are as follows.
+
+
+
+> 1-) 192.168.152.136
+
+> 2-) 192.168.152.134
+
+> 3-) 192.168.152.135 
+
+
+### • Ve son olarak aşağıdaki komutu çalıştırarak Redis clusterı oluşturun.
+### • Finally, create the Redis cluster by running the following command.
+
+
+> redis-cli -a judajudajudajudajuda --cluster create 192.168.152.136:7000 192.168.152.134:7000 192.168.152.135:7000 192.168.152.136:7001 192.168.152.134:7001 192.168.152.135:7001 --cluster-replicas 1
+
 
 
