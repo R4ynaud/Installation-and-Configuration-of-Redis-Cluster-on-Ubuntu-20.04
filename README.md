@@ -49,9 +49,9 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 ### If Vim is not installed on your operating system, you need to install the Vim editor before performing this process. To install the Vim editor, you can run the following command.
 
->
+
 > sudo apt-get install vim
->
+
 
 ### 4-) Aşağıdaki komutu çalıştırarak /etc/rc.local dosyasını oluşturun ve düzenleyin.
 ###     Create and edit the /etc/rc.local file by running the following command.
