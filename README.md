@@ -260,6 +260,11 @@ WantedBy=multi-user.target
 ```
 
 
+![image](https://user-images.githubusercontent.com/93924485/225981237-d3624786-bc61-4507-8bae-e2dc68c8417f.png)
+
+
+
+
 • Dosyayı kaydedip çıkın.
 
 • Save the file and exit.
