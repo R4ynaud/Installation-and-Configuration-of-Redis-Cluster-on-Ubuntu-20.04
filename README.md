@@ -231,4 +231,48 @@ requirepass [ACCESSKEY]
 
 
 
+### 10-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7000.service dosyasını oluşturun ve düzenleyin.
+###      Create and edit the /etc/systemd/system/redis_7000.service file by running the following command.
+
+
+
+> vim /etc/systemd/system/redis_7000.service
+
+
+
+``` bash
+
+[Unit]
+Description=Redis key-value database on 7000
+After=network.target
+[Service]
+ExecStart=/usr/bin/redis-server /etc/redis/cluster/7000/redis_7000.conf --supervised systemd
+ExecStop=/bin/redis-cli -h 127.0.0.1 -p 7000 shutdown
+Type=notify
+User=redis
+Group=redis
+RuntimeDirectory=redis
+RuntimeDirectoryMode=0755
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+
+```
+
+
+• Dosyayı kaydedip çıkın.
+
+• Save the file and exit.
+
+
+>:wq!
+
+
+
+
+
+
+
+
+
 
