@@ -35,9 +35,9 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 ### 3-) After completing the installation, we need to run the following commands to allow access to the ports.
 
 > sudo ufw allow 7000 
-> sudo ufw allow 7001
-> sudo ufw allow 17000
-> sudo ufw allow 17001
-        
+   sudo ufw allow 7001
+   sudo ufw allow 17000
+   sudo ufw allow 17001
+   >     
 
 .
