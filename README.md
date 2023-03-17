@@ -219,3 +219,16 @@ requirepass [ACCESSKEY]
 
 
 
+### 9-) Redis Server servisleri için bir redis kullanıcısı ve bir redis grubu oluşturun ve aşağıdaki komutları çalıştırarak onlara doğru izinleri verin.
+###     Create a redis user and a redis group for the Redis Server services and give them the correct permissions by running the following commands.
+
+
+> sudo chown redis:redis -R /var/lib/redis 
+
+> sudo chmod 770 -R /var/lib/redis
+
+> sudo chown redis:redis -R /etc/redis
+
+
+
+
