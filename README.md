@@ -336,3 +336,18 @@ WantedBy=multi-user.target
 > sudo reboot
 
 
+
+### 13-) Aşağıdaki komutu çalıştırarak 7000 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
+###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7000.
+
+
+> tail -n 100 /var/log/redis/redis_7000.log
+
+
+![image](https://user-images.githubusercontent.com/93924485/225987547-b9c6ccfb-ae54-4b6d-927c-e83cb9bb3385.png)
+
+
+
+
+
+
