@@ -319,6 +319,20 @@ WantedBy=multi-user.target
 
 
 
+### 12-) systemd'nin redis_7000.service ve redis_7001.service hizmetlerini otomatik olarak başlatmasını sağlamak için aşağıdaki komutları çalıştırın.
+###      Run the following commands to make systemd automatically start the redis_7000.service and redis_7001.service services.
 
+
+> sudo systemctl enable /etc/systemd/system/redis_7000.service
+
+> sudo systemctl enable /etc/systemd/system/redis_7001.service
+
+
+
+### 13-) Aşağıdaki komutu çalıştırarak sunucuyu yeniden başlatın.
+###      Reboot the server by running the following command.
+
+
+> sudo reboot
 
 
