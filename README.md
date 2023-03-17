@@ -15,3 +15,5 @@ Redis is an open-source, in-memory database management system. One of its main g
 
 > apt-get update  
 > apt-get upgrade
+
+### 2-) 
