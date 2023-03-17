@@ -82,9 +82,9 @@ exit 0 ' '
 > chmod +x /etc/rc.local
 
 
-• Save the file and exit.
-
 • Dosyayı kaydedip çıkın.
+
+• Save the file and exit.
 
 >:wq!
 
@@ -106,9 +106,10 @@ vm.overcommit_memory=1
 
 
 
+• Dosyayı kaydedip çıkın.
+
 • Save the file and exit.
 
-• Dosyayı kaydedip çıkın.
 
 >:wq!
 
