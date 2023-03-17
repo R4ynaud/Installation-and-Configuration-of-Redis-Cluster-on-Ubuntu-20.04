@@ -273,7 +273,48 @@ WantedBy=multi-user.target
 >:wq!
 
 
+### 11-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
+###      Create and edit the /etc/systemd/system/redis_7001.service file by running the following command.
 
+
+
+> vim 
+
+
+``` bash
+
+[Unit]
+Description=Redis key-value database on 7001
+After=network.target
+[Service]
+ExecStart=/usr/bin/redis-server /etc/redis/cluster/7001/redis_7001.conf --supervised systemd
+ExecStop=/bin/redis-cli -h 127.0.0.1 -p 7001 shutdown
+Type=notify
+User=redis
+Group=redis
+RuntimeDirectory=/etc/redis/cluster/7001
+RuntimeDirectoryMode=0755
+LimitNOFILE=65535
+[Install]
+WantedBy=multi-user.target
+
+
+```
+
+
+
+![image](https://user-images.githubusercontent.com/93924485/225982032-2222835e-f639-4e65-9070-b6cedb125ded.png)
+
+
+
+
+
+• Dosyayı kaydedip çıkın.
+
+• Save the file and exit.
+
+
+>:wq!
 
 
 
