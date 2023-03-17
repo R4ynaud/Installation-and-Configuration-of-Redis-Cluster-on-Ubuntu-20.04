@@ -114,7 +114,18 @@ vm.overcommit_memory=1
 >:wq!
 
 
+### 7-) Aşağıdaki komutları çalıştırarak bazı gerekli klasörleri oluşturun.
+###     Create some necessary folders by running the following commands.
 
+> sudo mkdir /etc/redis/cluster 
+
+> sudo mkdir /etc/redis/cluster/7000
+
+> sudo mkdir /var/lib/redis/7000
+
+> sudo mkdir /etc/redis/cluster/7001
+
+> mkdir /etc/redis/cluster/7001
 
 
 
