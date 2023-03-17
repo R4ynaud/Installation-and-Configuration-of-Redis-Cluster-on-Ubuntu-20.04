@@ -14,7 +14,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 ### 1-) Kurulumdan önce işletim sistemimizin paketlerini güncellemek için aşağıdaki komutları çalıştırıyoruz.
 ###     We run the following commands to update our operating system's packages before installation.
 
->  ``` sudo apt-get update  ```
+> sudo apt-get update  
 > sudo apt-get upgrade
 
 ### 2-) Redis Cluster kurulumu ve konfigürasyonu / Redis Cluster installation and configuration. 
