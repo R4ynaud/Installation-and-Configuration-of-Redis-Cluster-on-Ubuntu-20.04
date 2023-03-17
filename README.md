@@ -204,6 +204,12 @@ requirepass [ACCESSKEY]
 
 ``` 
 
+
+![image](https://user-images.githubusercontent.com/93924485/225979588-73e1d00a-8c33-47d9-937b-c3cd9ac115fe.png)
+
+
+
+
 • Dosyayı kaydedip çıkın.
 
 • Save the file and exit.
