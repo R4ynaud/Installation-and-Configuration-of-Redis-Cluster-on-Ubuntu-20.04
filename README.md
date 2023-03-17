@@ -47,7 +47,8 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 ### 4-) Eğer işletim sistemizde " Vim " yüklü değilse bu işlemi yapmadan önce vim editörünü yüklemeniz gerekecektir. Vim editörünü yüklemek içinde aşağıdaki komutu çalıştırmalısınız.
 
-### If Vim is not installed on your operating system, you need to install the Vim editor before performing this process. To install the Vim editor, you can run the following command
+### If Vim is not installed on your operating system, you need to install the Vim editor before performing this process. To install the Vim editor, you can run the following command.
+
 
 > sudo apt-get install vim
 
