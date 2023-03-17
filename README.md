@@ -349,5 +349,19 @@ WantedBy=multi-user.target
 
 
 
+### 13-) Aşağıdaki komutu çalıştırarak 7001 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
+###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7001.
+
+
+
+> tail -n 100 /var/log/redis/redis_7001.log
+
+
+
+![image](https://user-images.githubusercontent.com/93924485/225987929-05ed9277-3bf4-49ba-be7f-e2acbbd84fe4.png)
+
+
+
+
 
 
