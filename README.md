@@ -25,5 +25,4 @@ Redis is an open-source, in-memory database management system. One of its main g
 • We need to run the following command to install Redis.
 
 > sudo apt-get install redis-server
-
 > sudo systemctl disable redis-server.service
