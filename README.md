@@ -56,7 +56,8 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 > vim /etc/rc.local 
 
-'#!/bin/sh -e
+``` bash
+#!/bin/sh -e
 #
 # rc.local
 #
@@ -71,3 +72,4 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 sysctl -w net.core.somaxconn=65535
 exit 0 ' '
+```
