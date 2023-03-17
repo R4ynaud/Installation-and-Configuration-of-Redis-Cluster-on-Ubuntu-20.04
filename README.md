@@ -278,7 +278,7 @@ WantedBy=multi-user.target
 
 
 
-> vim 
+> vim /etc/systemd/system/redis_7001.service
 
 
 ``` bash
