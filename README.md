@@ -158,6 +158,10 @@ masterauth [ACCESSKEY]
 ``` 
 
 
+![image](https://user-images.githubusercontent.com/93924485/225979204-462dac88-d88e-42a5-9eb1-7dae574bf173.png)
+
+
+
 • Dosyayı kaydedip çıkın.
 
 • Save the file and exit.
@@ -167,7 +171,7 @@ masterauth [ACCESSKEY]
 
 
 
-![image](https://user-images.githubusercontent.com/93924485/225979204-462dac88-d88e-42a5-9eb1-7dae574bf173.png)
+
 
 
 
