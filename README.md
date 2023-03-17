@@ -16,9 +16,11 @@ Redis is an open-source, in-memory database management system. One of its main g
 > apt-get update  
 > apt-get upgrade
 
-### 2-) Cluster kurulumu  
+### 2-) Redis Cluster kurulumu ve konfigürasyonu  
 
 ![image](https://user-images.githubusercontent.com/93924485/225933102-eb5f2f6a-e3db-4f4a-b180-87c10fcf8081.png)
 
 • Redis kurulumu yapmak için aşağıdaki komutu çalıştırmamız gerekiyor. 
+• We need to run the following command to install Redis.
+
 > sudo apt-get install redis-server
