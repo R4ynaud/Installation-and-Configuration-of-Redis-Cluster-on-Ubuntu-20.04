@@ -42,6 +42,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
   
 > sudo ufw allow 17001
         
-![image](https://user-images.githubusercontent.com/93924485/225950000-c89ec66a-b092-4847-9354-402fe849747d.png)
+![image](https://user-images.githubusercontent.com/93924485/225950468-b8c31ff3-d03f-4355-a106-5f38d201d06c.png)
+
 
 .
