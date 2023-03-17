@@ -60,7 +60,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 > #
 ># rc.local
 >#
-># This script is executed at the end of each multiuser runlevel.
+> '# This script is executed at the end of each multiuser runlevel.
 ># Make sure that the script will "exit 0" on success or any other
 ># value on error.
 >#
