@@ -56,8 +56,8 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 > vim /etc/rc.local 
 
->. '#!/bin/sh -e
- #
+>. #!/bin/sh -e
+#
 # rc.local
 #
 # This script is executed at the end of each multiuser runlevel.
