@@ -9,4 +9,5 @@ Redis is an open-source, in-memory database management system. One of its main g
 
 ### 1 -
 • Kurulumdan önce işletim sistemimizin paketlerini güncellemek için aşağıdaki komutları çalıştırıyoruz. 
+
 • We run the following commands to update our operating system's packages before installation.
