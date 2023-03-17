@@ -89,6 +89,30 @@ exit 0 ' '
 >:wq!
 
 
+### 6-) Aşağıdaki komutu çalıştırarak /etc/sysctl.conf dosyasını düzenleyin.
+###     Edit the /etc/sysctl.conf file by running the following command.
+
+
+> vim /etc/sysctl.conf
+
+
+``` bash 
+
+vm.overcommit_memory=1
+
+``` 
+
+ ![image](https://user-images.githubusercontent.com/93924485/225975468-5845e2fa-bfd3-461f-8138-cc34a556c695.png)
+
+
+
+• Save the file and exit.
+
+• Dosyayı kaydedip çıkın.
+
+>:wq!
+
+
 
 
 
