@@ -117,6 +117,7 @@ vm.overcommit_memory=1
 ### 7-) Aşağıdaki komutları çalıştırarak bazı gerekli klasörleri oluşturun.
 ###     Create some necessary folders by running the following commands.
 
+
 > sudo mkdir /etc/redis/cluster 
 
 > sudo mkdir /etc/redis/cluster/7000
@@ -129,6 +130,32 @@ vm.overcommit_memory=1
 
 
 
+### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7000/redis_7000.conf dosyasını oluşturun ve düzenleyin.
+###     Create and edit the /etc/redis/cluster/7000/redis_7000.conf file by running the following command.
+
+
+
+> vim /etc/redis/cluster/7000/redis_7000.conf
+
+
+
+``` bash 
+
+port 7000
+dir /var/lib/redis/7000/
+appendonly no
+protected-mode no
+cluster-enabled yes
+cluster-node-timeout 5000
+cluster-config-file /etc/redis/cluster/7000/nodes_7000.conf
+pidfile /var/run/redis/redis_7000.pid
+logfile /var/log/redis/redis_7000.log
+loglevel notice
+requirepass [ACCESSKEY]
+masterauth [ACCESSKEY]
+
+
+``` 
 
 
 
