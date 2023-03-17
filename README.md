@@ -83,7 +83,10 @@ exit 0 ' '
 
 
 • Save the file and exit.
+
 • Dosyayı kaydedip çıkın.
+
+>:wq!
 
 
 
