@@ -421,7 +421,7 @@ WantedBy=multi-user.target
 
 
 
-
+``` bash 
 > sudo chown -R redis:redis /run/redis
 
 > systemctl start redis-server.service
@@ -436,6 +436,7 @@ WantedBy=multi-user.target
 
 > systemctl restart redis_7000.service
 
+``` 
 
 
 > vim /etc/redis/redis.conf 
