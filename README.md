@@ -422,26 +422,30 @@ WantedBy=multi-user.target
 
 
 ``` bash 
-> sudo chown -R redis:redis /run/redis
+ sudo chown -R redis:redis /run/redis
 
-> systemctl start redis-server.service
+ systemctl start redis-server.service
 
-> systemctl restart redis-server.service
+ systemctl restart redis-server.service
 
-> systemctl start redis_7001.service
+ systemctl start redis_7001.service
 
-> systemctl restart redis_7001.service
+ systemctl restart redis_7001.service
 
-> systemctl start redis_7000.service
+ systemctl start redis_7000.service
 
-> systemctl restart redis_7000.service
+ systemctl restart redis_7000.service
 
 ``` 
 
 
 > vim /etc/redis/redis.conf 
 
+
 > pidfile /var/run/redis/redis-server.pid
+
+
+
 
 ![image](https://user-images.githubusercontent.com/93924485/226220513-845317a2-df14-4d7a-b0d0-3ed52a2ecc8e.png)
 
