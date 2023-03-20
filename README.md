@@ -452,3 +452,46 @@ WantedBy=multi-user.target
 
 
 
+
+### • Redis'i kontrol etmek için SET ve GET komutlarını çalıştırıyoruz.
+### • We are running the SET and GET commands to check Redis.
+
+
+> redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda 
+
+> redis-cli -c -h 192.168.152.136 -p 7001 -a judajudajudajudajuda
+
+
+
+
+``` bash 
+
+set a 1 
+
+set b 2 
+
+set c 3 
+
+set d 4 
+
+get b
+
+get a 
+
+get c 
+
+get d 
+
+```
+
+
+![image](https://user-images.githubusercontent.com/93924485/226222958-af3ba98f-af49-49a1-ad55-a29227110296.png)
+
+
+
+
+
+
+
+
+
