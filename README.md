@@ -422,4 +422,18 @@ WantedBy=multi-user.target
 
 
 
+> sudo chown -R redis:redis /run/redis
+
+> systemctl start redis-server.service
+
+> systemctl restart redis-server.service
+
+> systemctl start redis_7001.service
+
+> systemctl restart redis_7001.service
+
+> systemctl start redis_7000.service
+
+> systemctl restart redis_7000.service
+
 
