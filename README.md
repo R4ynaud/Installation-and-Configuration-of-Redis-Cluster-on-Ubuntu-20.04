@@ -491,6 +491,19 @@ get d
 
 
 
+### • Aşağıdaki komutu çalıştırarak 40 saniye boyunca Sunucu 1'de Master'ın yük devretmesini simüle edin.
+### • Simulate a failover of the Master on Server 1 for 40 seconds by running the following command.
+
+
+> redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda DEBUG sleep 40 
+
+
+• Bu komutun çıktısı olarak "OK" almalısınız.
+• You should get OK as the output of this command.
+
+
+![image](https://user-images.githubusercontent.com/93924485/226224526-531514e2-ae88-4614-a6ea-730f61120fe5.png)
+
 
 
 
