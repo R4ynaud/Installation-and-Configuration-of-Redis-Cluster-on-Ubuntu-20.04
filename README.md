@@ -499,6 +499,7 @@ get d
 
 
 • Bu komutun çıktısı olarak "OK" almalısınız.
+
 • You should get OK as the output of this command.
 
 
