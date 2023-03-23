@@ -1,4 +1,4 @@
-# Redis-cluster-installing-and-configuring-on-Ubuntu-20.04
+# Installation and Configuration of Redis Cluster on Ubuntu 20.04
 Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing and configuring Redis cluster on Ubuntu 20.04
 
 ![image](https://user-images.githubusercontent.com/93924485/225926085-9bdce1db-27c4-43e6-919c-8292a70f4f88.png)
