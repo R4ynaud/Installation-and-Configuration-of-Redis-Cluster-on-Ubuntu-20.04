@@ -177,7 +177,7 @@ masterauth [ACCESSKEY]
 
 
 
-### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7001/redis_7001.conf dosyasını oluşturun ve düzenleyin.
+### 9-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7001/redis_7001.conf dosyasını oluşturun ve düzenleyin.
 ###     Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
 
 
@@ -219,7 +219,7 @@ requirepass [ACCESSKEY]
 
 
 
-### 9-) Redis Server servisleri için bir redis kullanıcısı ve bir redis grubu oluşturun ve aşağıdaki komutları çalıştırarak onlara doğru izinleri verin.
+### 10-) Redis Server servisleri için bir redis kullanıcısı ve bir redis grubu oluşturun ve aşağıdaki komutları çalıştırarak onlara doğru izinleri verin.
 ###     Create a redis user and a redis group for the Redis Server services and give them the correct permissions by running the following commands.
 
 
@@ -231,7 +231,7 @@ requirepass [ACCESSKEY]
 
 
 
-### 10-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7000.service dosyasını oluşturun ve düzenleyin.
+### 11-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7000.service dosyasını oluşturun ve düzenleyin.
 ###      Create and edit the /etc/systemd/system/redis_7000.service file by running the following command.
 
 
@@ -273,7 +273,7 @@ WantedBy=multi-user.target
 >:wq!
 
 
-### 11-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
+### 12-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
 ###      Create and edit the /etc/systemd/system/redis_7001.service file by running the following command.
 
 
@@ -319,7 +319,7 @@ WantedBy=multi-user.target
 
 
 
-### 12-) systemd'nin redis_7000.service ve redis_7001.service hizmetlerini otomatik olarak başlatmasını sağlamak için aşağıdaki komutları çalıştırın.
+### 13-) systemd'nin redis_7000.service ve redis_7001.service hizmetlerini otomatik olarak başlatmasını sağlamak için aşağıdaki komutları çalıştırın.
 ###      Run the following commands to make systemd automatically start the redis_7000.service and redis_7001.service services.
 
 
@@ -329,7 +329,7 @@ WantedBy=multi-user.target
 
 
 
-### 13-) Aşağıdaki komutu çalıştırarak sunucuyu yeniden başlatın.
+### 14-) Aşağıdaki komutu çalıştırarak sunucuyu yeniden başlatın.
 ###      Reboot the server by running the following command.
 
 
@@ -337,7 +337,7 @@ WantedBy=multi-user.target
 
 
 
-### 13-) Aşağıdaki komutu çalıştırarak 7000 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
+### 15-) Aşağıdaki komutu çalıştırarak 7000 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
 ###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7000.
 
 
@@ -349,7 +349,7 @@ WantedBy=multi-user.target
 
 
 
-### 13-) Aşağıdaki komutu çalıştırarak 7001 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
+### 16-) Aşağıdaki komutu çalıştırarak 7001 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
 ###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7001.
 
 
@@ -363,7 +363,7 @@ WantedBy=multi-user.target
 
 
 
-### 14-) Aşağıdaki komutu çalıştırarak 7000 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
+### 17-) Aşağıdaki komutu çalıştırarak 7000 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
 ###      Run the following command to check the status of the redis-server service running on port 7000.
 
 
@@ -378,7 +378,7 @@ WantedBy=multi-user.target
 
 
 
-### 14-) Aşağıdaki komutu çalıştırarak 7001 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
+### 18-) Aşağıdaki komutu çalıştırarak 7001 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
 ###      Run the following command to check the status of the redis-server service running on port 7001.
 
 
