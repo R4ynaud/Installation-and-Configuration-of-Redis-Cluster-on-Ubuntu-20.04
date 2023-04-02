@@ -43,7 +43,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 ![image](https://user-images.githubusercontent.com/93924485/225950468-b8c31ff3-d03f-4355-a106-5f38d201d06c.png)
 
 
-### 4-) Eğer işletim sisteminizde Vim kurulu değilse bu işlemi gerçekleştirmeden önce Vim editörünü kurmanız gerekmektedir. Vim editörünü kurmak için aşağıdaki komutu çalıştırabilirsiniz.
+### Eğer işletim sisteminizde Vim kurulu değilse bu işlemi gerçekleştirmeden önce Vim editörünü kurmanız gerekmektedir. Vim editörünü kurmak için aşağıdaki komutu çalıştırabilirsiniz.
 
 ### If Vim is not installed on your operating system, you need to install the Vim editor before performing this process. To install the Vim editor, you can run the following command.
 
