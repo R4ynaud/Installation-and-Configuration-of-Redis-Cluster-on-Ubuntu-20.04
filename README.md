@@ -151,8 +151,8 @@ cluster-config-file /etc/redis/cluster/7000/nodes_7000.conf
 pidfile /var/run/redis/redis_7000.pid
 logfile /var/log/redis/redis_7000.log
 loglevel notice
-requirepass [ACCESSKEY]
-masterauth [ACCESSKEY]
+requirepass judajudajudajudajuda
+masterauth judajudajudajudajuda
 
 
 ``` 
@@ -198,8 +198,8 @@ cluster-config-file /etc/redis/cluster/7001/nodes_7001.conf
 pidfile /var/run/redis/redis_7001.pid
 logfile /var/log/redis/redis_7001.log
 loglevel notice
-masterauth [ACCESSKEY]
-requirepass [ACCESSKEY]
+masterauth judajudajudajudajuda
+requirepass judajudajudajudajuda
 
 
 ``` 
