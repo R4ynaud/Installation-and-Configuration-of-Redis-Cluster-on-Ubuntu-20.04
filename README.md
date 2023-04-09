@@ -158,7 +158,8 @@ masterauth judajudajudajudajuda
 ``` 
 
 
-![image](https://user-images.githubusercontent.com/93924485/225979204-462dac88-d88e-42a5-9eb1-7dae574bf173.png)
+![image](https://user-images.githubusercontent.com/93924485/230792291-1ae27c9b-8c52-4af2-b320-b945335ddef8.png)
+
 
 
 
@@ -205,7 +206,8 @@ requirepass judajudajudajudajuda
 ``` 
 
 
-![image](https://user-images.githubusercontent.com/93924485/225979588-73e1d00a-8c33-47d9-937b-c3cd9ac115fe.png)
+![image](https://user-images.githubusercontent.com/93924485/230792337-83e57a72-d4a2-401a-bb0f-c55ea451a401.png)
+
 
 
 
