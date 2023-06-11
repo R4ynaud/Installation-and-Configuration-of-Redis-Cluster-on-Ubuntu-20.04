@@ -12,7 +12,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 * Redis is an open-source, in-memory database management system. One of its main goals is to provide high-performance and scalable databases. Redis works as a key-value store and keeps data in memory for fast access. It can also be used to store data on disk. Redis is a popular database solution, especially in areas such as caching, session management, sorting, and real-time applications.
 
 ### 1-) Kurulumdan önce işletim sistemimizin paketlerini güncellemek için aşağıdaki komutları çalıştırıyoruz.
-###     We run the following commands to update our operating system's packages before installation.
+### 1-) We run the following commands to update our operating system's packages before installation.
 
 > sudo apt-get update  
 > sudo apt-get upgrade
@@ -29,8 +29,8 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 > sudo systemctl disable redis-server.service
 
-### 3-)  Kurulumu tamamladıktan sonra aşağıdaki komutları çalıştırarak portlara izin vermemiz gerekiyor.  
-###      After completing the installation, we need to run the following commands to allow access to the ports.
+### 3-) Kurulumu tamamladıktan sonra aşağıdaki komutları çalıştırarak portlara izin vermemiz gerekiyor.  
+### 3-) After completing the installation, we need to run the following commands to allow access to the ports.
 
 > sudo ufw allow 7000 
    
@@ -52,7 +52,7 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 
 ### 4-) Aşağıdaki komutu çalıştırarak /etc/rc.local dosyasını oluşturun ve düzenleyin.
-###     Create and edit the /etc/rc.local file by running the following command.
+### 4-) Create and edit the /etc/rc.local file by running the following command.
 
 > vim /etc/rc.local 
 
@@ -76,7 +76,7 @@ exit 0 ' '
 
 
 ### 5-) Oluşturduğumuz dosyayı çalıştırılabilir hale getirmek için aşağıdaki komutu çalıştırmalıyız.
-###     To make a file executable, you should run the following command.
+### 5-) To make a file executable, you should run the following command.
 
 
 > chmod +x /etc/rc.local
@@ -90,7 +90,7 @@ exit 0 ' '
 
 
 ### 6-) Aşağıdaki komutu çalıştırarak /etc/sysctl.conf dosyasını düzenleyin.
-###     Edit the /etc/sysctl.conf file by running the following command.
+### 6-) Edit the /etc/sysctl.conf file by running the following command.
 
 
 > vim /etc/sysctl.conf
@@ -115,7 +115,7 @@ vm.overcommit_memory=1
 
 
 ### 7-) Aşağıdaki komutları çalıştırarak bazı gerekli klasörleri oluşturun.
-###     Create some necessary folders by running the following commands.
+### 7-) Create some necessary folders by running the following commands.
 
 
 > sudo mkdir /etc/redis/cluster 
@@ -131,7 +131,7 @@ vm.overcommit_memory=1
 
 
 ### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7000/redis_7000.conf dosyasını oluşturun ve düzenleyin.
-###     Create and edit the /etc/redis/cluster/7000/redis_7000.conf file by running the following command.
+### 8-) Create and edit the /etc/redis/cluster/7000/redis_7000.conf file by running the following command.
 
 
 
@@ -180,7 +180,7 @@ masterauth judajudajudajudajuda
 
 
 ### 9-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7001/redis_7001.conf dosyasını oluşturun ve düzenleyin.
-###     Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
+### 9-) Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
 
 
 
@@ -223,7 +223,7 @@ requirepass judajudajudajudajuda
 
 
 ### 10-) Redis Server servisleri için bir redis kullanıcısı ve bir redis grubu oluşturun ve aşağıdaki komutları çalıştırarak onlara doğru izinleri verin.
-###     Create a redis user and a redis group for the Redis Server services and give them the correct permissions by running the following commands.
+### 10-) Create a redis user and a redis group for the Redis Server services and give them the correct permissions by running the following commands.
 
 
 > sudo chown redis:redis -R /var/lib/redis 
@@ -235,7 +235,7 @@ requirepass judajudajudajudajuda
 
 
 ### 11-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7000.service dosyasını oluşturun ve düzenleyin.
-###      Create and edit the /etc/systemd/system/redis_7000.service file by running the following command.
+### 11-) Create and edit the /etc/systemd/system/redis_7000.service file by running the following command.
 
 
 
@@ -277,7 +277,7 @@ WantedBy=multi-user.target
 
 
 ### 12-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
-###      Create and edit the /etc/systemd/system/redis_7001.service file by running the following command.
+### 12-) Create and edit the /etc/systemd/system/redis_7001.service file by running the following command.
 
 
 
@@ -323,7 +323,7 @@ WantedBy=multi-user.target
 
 
 ### 13-) systemd'nin redis_7000.service ve redis_7001.service hizmetlerini otomatik olarak başlatmasını sağlamak için aşağıdaki komutları çalıştırın.
-###      Run the following commands to make systemd automatically start the redis_7000.service and redis_7001.service services.
+### 13-)  Run the following commands to make systemd automatically start the redis_7000.service and redis_7001.service services.
 
 
 > sudo systemctl enable /etc/systemd/system/redis_7000.service
@@ -333,7 +333,7 @@ WantedBy=multi-user.target
 
 
 ### 14-) Aşağıdaki komutu çalıştırarak sunucuyu yeniden başlatın.
-###      Reboot the server by running the following command.
+### 14-) Reboot the server by running the following command.
 
 
 > sudo reboot
@@ -341,7 +341,7 @@ WantedBy=multi-user.target
 
 
 ### 15-) Aşağıdaki komutu çalıştırarak 7000 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
-###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7000.
+### 15-)  Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7000.
 
 
 > tail -n 100 /var/log/redis/redis_7000.log
@@ -353,7 +353,7 @@ WantedBy=multi-user.target
 
 
 ### 16-) Aşağıdaki komutu çalıştırarak 7001 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
-###      Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7001.
+### 16-)  Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7001.
 
 
 
@@ -367,7 +367,7 @@ WantedBy=multi-user.target
 
 
 ### 17-) Aşağıdaki komutu çalıştırarak 7000 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
-###      Run the following command to check the status of the redis-server service running on port 7000.
+### 17-) Run the following command to check the status of the redis-server service running on port 7000.
 
 
 
@@ -382,7 +382,7 @@ WantedBy=multi-user.target
 
 
 ### 18-) Aşağıdaki komutu çalıştırarak 7001 numaralı çalışan redis-server hizmetinin durumunu kontrol edin.
-###      Run the following command to check the status of the redis-server service running on port 7001.
+### 18-) Run the following command to check the status of the redis-server service running on port 7001.
 
 
 
