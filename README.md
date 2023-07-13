@@ -26,22 +26,26 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 • Redis kurulumu yapmak için aşağıdaki komutu çalıştırmamız gerekiyor. 
 
 • We need to run the following command to install Redis.
-
-> sudo apt-get install redis-server
-
-> sudo systemctl disable redis-server.service
-
+```
+ sudo apt-get install redis-server
+```
+```
+ sudo systemctl disable redis-server.service
+```
 ### 3-) Kurulumu tamamladıktan sonra aşağıdaki komutları çalıştırarak portlara izin vermemiz gerekiyor.  
 ### 3-) After completing the installation, we need to run the following commands to allow access to the ports.
-
-> sudo ufw allow 7000 
-   
-> sudo ufw allow 7001
-  
-> sudo ufw allow 17000
-  
-> sudo ufw allow 17001
-        
+```
+ sudo ufw allow 7000 
+```
+```   
+ sudo ufw allow 7001
+```
+```  
+ sudo ufw allow 17000
+```
+```  
+ sudo ufw allow 17001
+```        
 ![image](https://user-images.githubusercontent.com/93924485/225950468-b8c31ff3-d03f-4355-a106-5f38d201d06c.png)
 
 
@@ -49,15 +53,15 @@ Ubuntu 20.04 üzerinde Redis cluster kurulumu ve konfigürasyonu / Installing an
 
 ### If Vim is not installed on your operating system, you need to install the Vim editor before performing this process. To install the Vim editor, you can run the following command.
 
-
-> sudo apt-get install vim
-
+```
+ sudo apt-get install vim
+```
 
 ### 4-) Aşağıdaki komutu çalıştırarak /etc/rc.local dosyasını oluşturun ve düzenleyin.
 ### 4-) Create and edit the /etc/rc.local file by running the following command.
-
-> vim /etc/rc.local 
-
+```
+ vim /etc/rc.local 
+```
 ``` bash
 #!/bin/sh -e
 #
@@ -80,23 +84,24 @@ exit 0 ' '
 ### 5-) Oluşturduğumuz dosyayı çalıştırılabilir hale getirmek için aşağıdaki komutu çalıştırmalıyız.
 ### 5-) To make a file executable, you should run the following command.
 
-
-> chmod +x /etc/rc.local
-
+```
+ chmod +x /etc/rc.local
+```
 
 • Dosyayı kaydedip çıkın.
 
 • Save the file and exit.
 
->:wq!
-
+```
+:wq!
+```
 
 ### 6-) Aşağıdaki komutu çalıştırarak /etc/sysctl.conf dosyasını düzenleyin.
 ### 6-) Edit the /etc/sysctl.conf file by running the following command.
 
-
-> vim /etc/sysctl.conf
-
+```
+ vim /etc/sysctl.conf
+```
 
 ``` bash 
 
@@ -112,33 +117,37 @@ vm.overcommit_memory=1
 
 • Save the file and exit.
 
-
->:wq!
-
+```
+:wq!
+```
 
 ### 7-) Aşağıdaki komutları çalıştırarak bazı gerekli klasörleri oluşturun.
 ### 7-) Create some necessary folders by running the following commands.
 
-
-> sudo mkdir /etc/redis/cluster 
-
-> sudo mkdir /etc/redis/cluster/7000
-
-> sudo mkdir /var/lib/redis/7000
-
-> sudo mkdir /etc/redis/cluster/7001
-
-> mkdir /etc/redis/cluster/7001
-
+```
+ sudo mkdir /etc/redis/cluster 
+```
+```
+ sudo mkdir /etc/redis/cluster/7000
+```
+```
+ sudo mkdir /var/lib/redis/7000
+```
+```
+ sudo mkdir /etc/redis/cluster/7001
+```
+```
+ mkdir /etc/redis/cluster/7001
+```
 
 
 ### 8-) Aşağıdaki komutu çalıştırarak /etc/redis/cluster/7000/redis_7000.conf dosyasını oluşturun ve düzenleyin.
 ### 8-) Create and edit the /etc/redis/cluster/7000/redis_7000.conf file by running the following command.
 
 
-
-> vim /etc/redis/cluster/7000/redis_7000.conf
-
+```
+ vim /etc/redis/cluster/7000/redis_7000.conf
+```
 
 
 ``` bash 
@@ -170,9 +179,9 @@ masterauth judajudajudajudajuda
 
 • Save the file and exit.
 
-
->:wq!
-
+```
+:wq!
+```
 
 
 
@@ -185,9 +194,9 @@ masterauth judajudajudajudajuda
 ### 9-) Create and edit the /etc/redis/cluster/7001/redis_7001.conf file by running the following command.
 
 
-
->  vim /etc/redis/cluster/7001/redis_7001.conf
-
+```
+  vim /etc/redis/cluster/7001/redis_7001.conf
+```
 
 ``` bash 
 
@@ -219,30 +228,32 @@ requirepass judajudajudajudajuda
 
 • Save the file and exit.
 
-
->:wq!
-
+```
+:wq!
+```
 
 
 ### 10-) Redis Server servisleri için bir redis kullanıcısı ve bir redis grubu oluşturun ve aşağıdaki komutları çalıştırarak onlara doğru izinleri verin.
 ### 10-) Create a redis user and a redis group for the Redis Server services and give them the correct permissions by running the following commands.
 
-
-> sudo chown redis:redis -R /var/lib/redis 
-
-> sudo chmod 770 -R /var/lib/redis
-
-> sudo chown redis:redis -R /etc/redis
-
+```
+ sudo chown redis:redis -R /var/lib/redis 
+```
+```
+ sudo chmod 770 -R /var/lib/redis
+```
+```
+ sudo chown redis:redis -R /etc/redis
+```
 
 
 ### 11-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7000.service dosyasını oluşturun ve düzenleyin.
 ### 11-) Create and edit the /etc/systemd/system/redis_7000.service file by running the following command.
 
 
-
-> vim /etc/systemd/system/redis_7000.service
-
+```
+ vim /etc/systemd/system/redis_7000.service
+```
 
 
 ``` bash
@@ -274,17 +285,17 @@ WantedBy=multi-user.target
 
 • Save the file and exit.
 
-
->:wq!
-
+```
+:wq!
+```
 
 ### 12-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
 ### 12-) Create and edit the /etc/systemd/system/redis_7001.service file by running the following command.
 
 
-
-> vim /etc/systemd/system/redis_7001.service
-
+```
+ vim /etc/systemd/system/redis_7001.service
+```
 
 ``` bash
 
@@ -319,35 +330,37 @@ WantedBy=multi-user.target
 • Save the file and exit.
 
 
->:wq!
-
+```
+:wq!
+```
 
 
 
 ### 13-) systemd'nin redis_7000.service ve redis_7001.service hizmetlerini otomatik olarak başlatmasını sağlamak için aşağıdaki komutları çalıştırın.
 ### 13-)  Run the following commands to make systemd automatically start the redis_7000.service and redis_7001.service services.
 
-
-> sudo systemctl enable /etc/systemd/system/redis_7000.service
-
-> sudo systemctl enable /etc/systemd/system/redis_7001.service
-
+```
+ sudo systemctl enable /etc/systemd/system/redis_7000.service
+```
+```
+ sudo systemctl enable /etc/systemd/system/redis_7001.service
+```
 
 
 ### 14-) Aşağıdaki komutu çalıştırarak sunucuyu yeniden başlatın.
 ### 14-) Reboot the server by running the following command.
 
-
-> sudo reboot
-
+```
+ sudo reboot
+```
 
 
 ### 15-) Aşağıdaki komutu çalıştırarak 7000 numaralı bağlantı noktasında çalışan redis-server hizmeti için log dosyasının içeriğini (son 100 satır) kontrol edin.
 ### 15-)  Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7000.
 
-
-> tail -n 100 /var/log/redis/redis_7000.log
-
+```
+ tail -n 100 /var/log/redis/redis_7000.log
+```
 
 ![image](https://user-images.githubusercontent.com/93924485/225987547-b9c6ccfb-ae54-4b6d-927c-e83cb9bb3385.png)
 
@@ -358,9 +371,9 @@ WantedBy=multi-user.target
 ### 16-)  Run the following command to check the contents of the log file (last 100 lines) for the redis-server service running on port 7001.
 
 
-
-> tail -n 100 /var/log/redis/redis_7001.log
-
+```
+ tail -n 100 /var/log/redis/redis_7001.log
+```
 
 
 ![image](https://user-images.githubusercontent.com/93924485/225987929-05ed9277-3bf4-49ba-be7f-e2acbbd84fe4.png)
@@ -372,9 +385,9 @@ WantedBy=multi-user.target
 ### 17-) Run the following command to check the status of the redis-server service running on port 7000.
 
 
-
-> systemctl status redis_7000.service
-
+```
+ systemctl status redis_7000.service
+```
 
 
 ![image](https://user-images.githubusercontent.com/93924485/225988697-b84c7dca-d014-4b3e-890e-8fb8fec1eea4.png)
@@ -387,9 +400,9 @@ WantedBy=multi-user.target
 ### 18-) Run the following command to check the status of the redis-server service running on port 7001.
 
 
-
-> systemctl status redis_7001.service
-
+```
+ systemctl status redis_7001.service
+```
 
 
 ![image](https://user-images.githubusercontent.com/93924485/225988786-6f4973c8-c3f7-4ab4-b33c-d7cc01a6b1a5.png)
@@ -405,20 +418,22 @@ WantedBy=multi-user.target
 ### • Consider that the IP addresses of three Redis servers are as follows.
 
 
-
-> 1-) 192.168.152.136
-
-> 2-) 192.168.152.134
-
-> 3-) 192.168.152.135 
-
+```
+ 1-) 192.168.152.136
+```
+```
+ 2-) 192.168.152.134
+```
+```
+ 3-) 192.168.152.135 
+```
 
 ### • Ve son olarak aşağıdaki komutu çalıştırarak Redis clusterı oluşturun.
 ### • Finally, create the Redis cluster by running the following command.
 
-
-> redis-cli -a judajudajudajudajuda --cluster create 192.168.152.136:7000 192.168.152.134:7000 192.168.152.135:7000 192.168.152.136:7001 192.168.152.134:7001 192.168.152.135:7001 --cluster-replicas 1
-
+```
+ redis-cli -a judajudajudajudajuda --cluster create 192.168.152.136:7000 192.168.152.134:7000 192.168.152.135:7000 192.168.152.136:7001 192.168.152.134:7001 192.168.152.135:7001 --cluster-replicas 1
+```
 
 
 ![image](https://user-images.githubusercontent.com/93924485/225991885-a297a031-d318-4cec-abe1-3b7de2f26712.png)
@@ -443,12 +458,12 @@ WantedBy=multi-user.target
 
 ``` 
 
-
-> vim /etc/redis/redis.conf 
-
-
-> pidfile /var/run/redis/redis-server.pid
-
+```
+ vim /etc/redis/redis.conf 
+```
+```
+ pidfile /var/run/redis/redis-server.pid
+```
 
 
 
@@ -461,11 +476,12 @@ WantedBy=multi-user.target
 ### • Redis'i kontrol etmek için SET ve GET komutlarını çalıştırıyoruz.
 ### • We are running the SET and GET commands to check Redis.
 
-
-> redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda 
-
-> redis-cli -c -h 192.168.152.136 -p 7001 -a judajudajudajudajuda
-
+```
+ redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda 
+```
+```
+ redis-cli -c -h 192.168.152.136 -p 7001 -a judajudajudajudajuda
+```
 
 
 
@@ -499,9 +515,9 @@ get d
 ### • Aşağıdaki komutu çalıştırarak 40 saniye boyunca Sunucu 1'de Master'ın yük devretmesini simüle edin.
 ### • Simulate a failover of the Master on Server 1 for 40 seconds by running the following command.
 
-
-> redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda DEBUG sleep 40 
-
+```
+ redis-cli -c -h 192.168.152.136 -p 7000 -a judajudajudajudajuda DEBUG sleep 40 
+```
 
 • Bu komutun çıktısı olarak "OK" almalısınız.
 
