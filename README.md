@@ -93,7 +93,7 @@ exit 0 ' '
 • Save the file and exit.
 
 ```
-:wq!
+ :wq!
 ```
 
 ### 6-) Aşağıdaki komutu çalıştırarak /etc/sysctl.conf dosyasını düzenleyin.
@@ -105,7 +105,7 @@ exit 0 ' '
 
 ``` bash 
 
-vm.overcommit_memory=1
+ vm.overcommit_memory=1
 
 ``` 
 
@@ -118,7 +118,7 @@ vm.overcommit_memory=1
 • Save the file and exit.
 
 ```
-:wq!
+ :wq!
 ```
 
 ### 7-) Aşağıdaki komutları çalıştırarak bazı gerekli klasörleri oluşturun.
@@ -180,7 +180,7 @@ masterauth judajudajudajudajuda
 • Save the file and exit.
 
 ```
-:wq!
+ :wq!
 ```
 
 
@@ -229,7 +229,7 @@ requirepass judajudajudajudajuda
 • Save the file and exit.
 
 ```
-:wq!
+ :wq!
 ```
 
 
@@ -286,7 +286,7 @@ WantedBy=multi-user.target
 • Save the file and exit.
 
 ```
-:wq!
+ :wq!
 ```
 
 ### 12-) Aşağıdaki komutu çalıştırarak /etc/systemd/system/redis_7001.service dosyasını oluşturun ve düzenleyin.
@@ -331,7 +331,7 @@ WantedBy=multi-user.target
 
 
 ```
-:wq!
+ :wq!
 ```
 
 
